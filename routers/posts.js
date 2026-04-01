@@ -52,7 +52,7 @@ router.post('/', (req, res) => {
 // far vedere il singolo post nell id corrente                INDEX
 router.get("/:id", (req, res) => {
     const id = parseInt(req.params.id) // parseInt Necessario
-    const post = posts.find(post => post.id === id)
+    const post = posts.filter(post => !(post.id === id))
     res.json(post)
 })
 
@@ -71,4 +71,4 @@ router.delete("/:id", (req, res) => {
     res.send(`rimuovere tutto l elemento id ${req.params.id}`)
 })
 
-module.exports = router
+module.exports = {router, posts}

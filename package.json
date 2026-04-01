@@ -1,8 +1,8 @@
 {
-  "name": "express-blog-intro",
+  "name": "express-blog-routing",
   "version": "1.0.0",
   "description": "Simple Express blog API",
-  "main": "server.js",
+  "main": "app.js",
   "type": "commonjs",
   "scripts": {
     "start": "node app.js",

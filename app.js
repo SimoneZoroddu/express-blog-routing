@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const routerPosts = require("./routers/posts")
+const { router: routerPosts, posts} = require("./routers/posts")
 
 // Serve static files from /public directory under /images path
 app.use('/images', express.static('public'));
